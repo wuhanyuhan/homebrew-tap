@@ -5,21 +5,21 @@
 class Ks < Formula
   desc "Keystone 开放生态平台开发者工具链"
   homepage "https://github.com/wuhanyuhan/ks-devkit"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.3.0/ks_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c6965de6fd45c9c6b857c3ef1d1a24d3540eb46091f14d07a4c20f5d4c729b08"
+      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.4.0/ks_0.4.0_darwin_amd64.tar.gz"
+      sha256 "99e055c2539830e730552270b1b678e14737dd2300b73bca11bb1e89f85e7ed6"
 
       define_method(:install) do
         bin.install "ks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.3.0/ks_0.3.0_darwin_arm64.tar.gz"
-      sha256 "d340a79e3f4db4ca97781bce1ff7548b786d83c147034ec2f2c6775e5de973c6"
+      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.4.0/ks_0.4.0_darwin_arm64.tar.gz"
+      sha256 "cfaa3ac3d9854299c4d6e6573310d18550622efe85cd30b4731d963fb859f18f"
 
       define_method(:install) do
         bin.install "ks"
@@ -29,15 +29,15 @@ class Ks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.3.0/ks_0.3.0_linux_amd64.tar.gz"
-      sha256 "53443a204971f274f3769ab89fef89e200910fd6c68ef95f5b4e5b834ab234a6"
+      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.4.0/ks_0.4.0_linux_amd64.tar.gz"
+      sha256 "62fdf6f67f1cdc76c62799a4348edb27bf6403a18fdc7847873f5c2f769b43b8"
       define_method(:install) do
         bin.install "ks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.3.0/ks_0.3.0_linux_arm64.tar.gz"
-      sha256 "3b5416ac846196e28fa9de3a9c33bf5e298e1c550de877f8f2aae698e1d035f5"
+      url "https://github.com/wuhanyuhan/ks-devkit/releases/download/v0.4.0/ks_0.4.0_linux_arm64.tar.gz"
+      sha256 "df8d327b1b62e9d06c8acf4e0fab7da8c328a7b9f0c692c4b98cd09f364502b4"
       define_method(:install) do
         bin.install "ks"
       end
